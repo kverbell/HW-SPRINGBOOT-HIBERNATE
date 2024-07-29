@@ -1,4 +1,4 @@
-CREATE TABLE PERSONS (
+CREATE TABLE PERSON (
     name VARCHAR(50),
     surname VARCHAR(50),
     age INT,

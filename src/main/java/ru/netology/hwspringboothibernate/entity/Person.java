@@ -1,12 +1,10 @@
 package ru.netology.hwspringboothibernate.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.IdClass;
-import javax.persistence.Id;
-import javax.persistence.Column;
+import javax.persistence.*;
 
 @Entity
 @IdClass(PersonId.class)
+@Table(name = "PERSON")
 public class Person {
 
     @Id
@@ -20,10 +18,10 @@ public class Person {
     @Id
     private int age;
 
-    @Column(length = 15)
+    @Column(name = "phone_number", length = 15)
     private String phoneNumber;
 
-    @Column(length = 50)
+    @Column(name = "city_of_living", length = 50)
     private String cityOfLiving;
 
     public String getName() {
