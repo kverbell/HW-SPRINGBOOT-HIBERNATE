@@ -18,7 +18,7 @@ public class PersonController {
         this.personRepository = personRepository;
     }
 
-    @GetMapping("/persons/by-city")
+    @GetMapping("/by-city")
     public List<Person> getPersonsByCity(@RequestParam String city) {
         return personRepository.findByCityOfLiving(city);
     }
